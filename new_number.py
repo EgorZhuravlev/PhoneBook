@@ -5,7 +5,7 @@ def get_new_number():
     return last_name, first_name, phone_number
 
 
-def add_phone_number(file_name):
+def add_phone_number (phonebook):
     info = ' '.join(get_new_number())
-    with open(file_name, 'a', encoding='utf-8') as file:
-        file.write(f'{info}\n')
+    with open(phonebook, 'a', encoding='utf-8') as phonebook:
+        phonebook.write(f'{info}\n')
