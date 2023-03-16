@@ -1,5 +1,5 @@
-def read_file_to_dict(file_name):
-    with open(file_name, 'r', encoding='utf-8') as file:
+def read_file_to_dict(phonebook):
+    with open(phonebook, 'r', encoding='utf-8') as file:
         lines = file.readlines()
     headers = ['Фамилия', 'Имя', 'Номер телефона']
     contact_list = []
