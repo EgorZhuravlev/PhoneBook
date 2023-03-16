@@ -1,8 +1,8 @@
 def find_number(contact_list):
     from search import search_parameters
     from print_file import print_contacts
-    search_field, search_value = search_parameters()
-    search_value_dict = {'1': 'Фамилия', '2': 'Имя', '3': 'Номер телефона'}
+    search_field, search_value  = search_parameters()
+    search_value_dict = {'1': 'Surname', '2': 'Name', '3': 'Number'}
     found_contacts = []
     for contact in contact_list:
         if contact[search_value_dict[search_field]] == search_value:
